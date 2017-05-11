@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maps</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/stylesheet.css"/> 
+  </head>
+  <body>
+    <main>
+      <h1>Maps</h1>
+      <form>
+        <select id="select">
+          <option value="">Select</option>
+          <option value="spaceneedle" id="spaceneedle">Space Needle</option>
+          <option value="bellevue" id="bellevue">Bellevue</option>
+          <option value="kirkland" id="kirkland">Kirkland</option>
+          <option value="issaquah" id="issaquah">Issaquah</option>
+          <option value="sammamish" id="sammamish">Sammamish</option>
+        </select>
+      </form>
+      <div id="google-map" style="width:100%;height:400px;">
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uReli5jlaZYstDxZBhqIqvB52UeAM4I&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+  </body>
+</html>
+    
